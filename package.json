@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "test": "node test.js",
-    "build": "parcel build --no-cache --no-minify --out-file helping.js index.js && parcel build --no-cache --out-file helping.min.js index.js"
+    "build": "parcel build --no-cache --no-minify --out-file helping.js index.js && parcel build --no-cache --out-file helping.min.js index.js",
+    "publish": "np"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
