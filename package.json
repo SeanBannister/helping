@@ -21,7 +21,7 @@
   "scripts": {
     "test": "node test.js",
     "build": "parcel build --no-cache --no-minify --out-file helping.js index.js && parcel build --no-cache --out-file helping.min.js index.js",
-    "release": "np"
+    "release": "npm run build && np"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
