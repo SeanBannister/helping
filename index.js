@@ -2,7 +2,7 @@
  * Check if a variable|array|object|etc is empty|null|undefined|etc. 
  * A full list of what this function considers to be null can be seen in the tests of the Helping project.
  * 
- * @param {(*)} value
+ * @param {*} value
  * @return {boolean} A boolean that states if the parsed in value is considered empty.
  */
 export function empty(value) {
