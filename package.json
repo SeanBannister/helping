@@ -1,22 +1,29 @@
 {
   "name": "helping",
   "description": "A collection of generic Javascript functions that help in day to day programming.",
+  "keywords": ["util", "functional", "utilities", "toolkit", "helper", "server", "client", "browser", "library"],
   "version": "0.1.0",
   "author": "Sean Bannister",
   "license": "ISC",
-  "engines": {
-    "node": ">= 12.17.0"
-  },
   "type": "module",
   "exports": {
     "browser": "./dist/helping.min.cjs",
     "default": "./index.js"
   },
+  "engines": { "node": ">= 12.17.0" },
+  "browserslist": ["> 0.1%", "last 5 versions"],
   "scripts": {
     "test": "node test.js",
     "build": "parcel build --no-cache --no-minify --out-file helping.js index.js && parcel build --no-cache --out-file helping.min.js index.js"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "bugs": {
+    "url": "https://github.com/seanbannister/helping/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanbannister/helping.git"
   }
 }
