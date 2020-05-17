@@ -5,8 +5,6 @@
   "author": "Sean Bannister",
   "license": "ISC",
   "type": "module",
-  "main": "./index.js",
-  "browser": "./dist/helping.min.js",
   "exports": {
     "browser": "./dist/helping.min.js",
     "default": "./index.js"
@@ -20,11 +18,13 @@
   ],
   "scripts": {
     "test": "node test.js",
-    "build": "parcel build --no-cache --no-minify --out-file helping.js index.js && parcel build --no-cache --out-file helping.min.js index.js",
-    "release": "npm run build && np"
+    "build": "microbundle --entry index.js --output dist/minified/ --target web --format umd,es --name helping && microbundle --entry index.js --output dist/unminified/ --target web --format umd,es --name helping --no-compress && node post-build.js",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "microbundle": "^0.12.0",
+    "mv": "^2.1.1"
   },
   "homepage": "https://github.com/seanbannister/helping",
   "repository": {
