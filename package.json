@@ -1,7 +1,7 @@
 {
   "name": "helping",
   "description": "A collection of generic Javascript functions that help in day to day programming.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Sean Bannister",
   "license": "ISC",
   "type": "module",
