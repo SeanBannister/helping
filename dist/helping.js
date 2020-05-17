@@ -27,4 +27,4 @@ function each(obj, callback) {
 }
 
 export { each, empty };
-//# sourceMappingURL=helping.esm.js.map
+//# sourceMappingURL=helping.js.map
