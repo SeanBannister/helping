@@ -44,14 +44,9 @@ The UMD package provides all functions under a global namespace called `helping`
 </script>
 ```
 
-
 ## Documentation
 
 Documented using [JSDoc](https://jsdoc.app/) and available [here](https://doxdox.org/seanbannister/helping).
-
-
-
-- [ ] Once Mocha supports ES Modules, write testing suite.
 
 ## Contributing
 
